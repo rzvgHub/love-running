@@ -55,3 +55,12 @@ main {
 footer {
     background-color: orange;
 }
+
+
+#menu {
+
+    letter-spacing: 4px;  /* create space between letters */
+    font-size: 110%; /* makes size a little bigger */
+    list-style-type: none; /* removes the bulletpoints from the list */
+    
+}
