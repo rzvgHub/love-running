@@ -29,6 +29,9 @@ header {                   /*styled for mobile screens */
     z-index: 99;      /* to make sure its laierd ontop of other elements that might have a z-index later */
     width: 100%;       /*  position fixed has affected the width of the element , to corect we use width: 100 */
     box-shadow: 0 2px 2px #3a3a3a;       /* makes the header show slitly above the other elements */
+    display: flex; /* down code mset the nav-toggle checkbox to the top right */
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a {
@@ -86,4 +89,22 @@ nav {
     left: 0; /* stick it to the left of the page */
     padding: 0 1rem; /* make nav items line-up nice below the header */
     display: none; /* the nav bar stay hiden until the user click on it */
+    top: 100%; /* Keep the header above the nav elements , this tell the nav elements that have to start from the bottom if its parent */
+}
+
+/* MAKE NAV-BAR TOGGLE WHEN IT IS CHECKED */
+
+#nav-toggle:checked~nav {
+
+    display: block;
+}
+
+#nav-toggle {
+    display: none; /* make checkbox disapear from the drop down button */
+}
+
+.nav-toggle-label {
+
+    font-size: 2rem;  /* make the label larger so its easyer to tap */
+
 }
