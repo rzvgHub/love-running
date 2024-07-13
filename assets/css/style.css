@@ -64,3 +64,13 @@ footer {
     list-style-type: none; /* removes the bulletpoints from the list */
     
 }
+
+#menu > li {             /*target the list from the menu , here we create some vertical space between the items of the list.*/
+
+margin-bottom: 1rem;
+
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a; /* underline the current position in the menu */
+}
