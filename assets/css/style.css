@@ -6,12 +6,26 @@
     box-sizing: border-box;
 }
 
+/* General styles applyed to the body , this will apply to all body elements if otherwise specified */
+
+body {
+
+    min-height: 100vh;  /* makes the body viewport height 100% of the viewport */
+    display: flex;
+    flex-direction: column;
+    color: #3a3a3a;
+
+}
+
 header {
     background-color: lightcoral;
 }
 
 main {
     background-color: lightblue;
+    flex-grow: 1;  /* Makes main contect take any surplus space. Shorthand flex: 1 0 auto; */
+    flex-shrink: 0;
+    flex-basis: auto;
 }
 
 footer {
