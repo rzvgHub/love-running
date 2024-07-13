@@ -109,3 +109,33 @@ nav {
     font-size: 2rem;  /* make the label larger so its easyer to tap */
 
 }
+
+
+/* MEDIA QUERIES -- Tablets and Larger than 768px should be below so it can override phone styles , It only activates when certain criteria are meet ( scren width being reached) */
+/* any css writen in media queri will  apply only to tablets or screns > width 768px */
+
+@media screen and (min-width: 768px) {  
+
+    /*header*/
+    nav {
+        display: block;  /* makes sure nav bar is always displayed */
+        position: relative; /*to be back inside the header */
+        box-shadow: none; /* we no longer need it */
+        width: fit-content; /* no longer take all the space within the header */
+        padding-right: 1rem; /* so meniu itesm will not thik to the screen edge */
+    }
+
+     #menu {
+
+        display: flex; /*makes menu show in a row*/
+        
+   }
+     #menu > li {
+
+        padding-left: 1rem;
+     }
+    .nav-toggle-label {
+
+        display: none; /* disable the toggle checkbox */
+    }
+}
