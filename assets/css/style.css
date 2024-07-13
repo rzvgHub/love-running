@@ -23,7 +23,12 @@ body {
 }
 
 header {
-    background-color: lightcoral;
+    background-color: #ffffff;
+    padding: 0 1rem;     /*longhand padding-left padding-right to prevent contecnt stick to side of the screen*/
+    position: fixed;
+    z-index: 99;      /* to make sure its laierd ontop of other elements that might have a z-index later */
+    width: 100%;       /*  position fixed has affected the width of the element , to corect we use width: 100 */
+    box-shadow: 0 2px 2px #3a3a3a;       /* makes the header show slitly above the other elements */
 }
 h1 {
 
