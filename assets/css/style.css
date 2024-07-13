@@ -56,10 +56,17 @@ main {
     margin-top: 47px; /* the main placehoder text was taken out of the normal flow of the page by fixed position of the header, so we use this to make it show up agai */
 }
 
-footer {
-    background-color: orange;
-}
+ /* FOOTER */
+ #social-networks {
 
+    text-align: center;
+    padding: 20px 0; /* above and below sh */
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none; /* remove list buletpoints */
+    
+   
+ }
 
 #menu {
 
@@ -110,6 +117,13 @@ nav {
 
 }
 
+#social-networks i {
+
+    font-size: 160%; /*makes icons larger */
+    padding: 5%; /*for some space */
+    color: #3a3a3a;
+}
+
 
 /* MEDIA QUERIES -- Tablets and Larger than 768px should be below so it can override phone styles , It only activates when certain criteria are meet ( scren width being reached) */
 /* any css writen in media queri will  apply only to tablets or screns > width 768px */
@@ -157,7 +171,7 @@ nav {
 @media screen and (min-width: 992px) {
 
     #menu a:hover {
-        
+
         border-bottom: 1px solid #3a3a3a; /* underline the current position in the menu */
 
     }
