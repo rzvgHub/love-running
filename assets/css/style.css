@@ -22,7 +22,7 @@ body {
 
 }
 
-header {
+header {                   /*styled for mobile screens */
     background-color: #ffffff;
     padding: 0 1rem;     /*longhand padding-left padding-right to prevent contecnt stick to side of the screen*/
     position: fixed;
@@ -34,7 +34,7 @@ header {
 header a {
     text-decoration: none; /* remove link underline */
     color: inherit; 
-    letter-spacing: 2px; /* creat space between letters */
+    letter-spacing: 2px; /* create space between letters */
     color: #252525;
 
 }
@@ -73,4 +73,17 @@ margin-bottom: 1rem;
 
 .active {
     border-bottom: 1px solid #3a3a3a; /* underline the current position in the menu */
+}
+
+
+/* Nav bar styles for the DROPDOWN MENU */
+
+nav {
+    position: absolute; /* takes an element outside of the normal flow of the page structure , being position to the nearest ancester */
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;       /* makes the header show slitly above the other elements */
+    left: 0; /* stick it to the left of the page */
+    padding: 0 1rem; /* make nav items line-up nice below the header */
+    display: none; /* the nav bar stay hiden until the user click on it */
 }
