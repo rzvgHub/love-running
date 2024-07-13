@@ -53,6 +53,7 @@ main {
     flex-grow: 1;  /* Makes main contect take any surplus space. Shorthand flex: 1 0 auto; */
     flex-shrink: 0;
     flex-basis: auto;
+    margin-top: 47px; /* the main placehoder text was taken out of the normal flow of the page by fixed position of the header, so we use this to make it show up agai */
 }
 
 footer {
