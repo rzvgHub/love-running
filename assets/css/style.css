@@ -49,11 +49,18 @@ h1 {
 }
 
 main {
-    background-color: lightblue;
+    
     flex-grow: 1;  /* Makes main contect take any surplus space. Shorthand flex: 1 0 auto; */
     flex-shrink: 0;
     flex-basis: auto;
     margin-top: 47px; /* the main placehoder text was taken out of the normal flow of the page by fixed position of the header, so we use this to make it show up agai */
+}
+
+#hero {
+    
+    height: 600px;
+    width: 100%;
+    background: url(../images/hero-image.webp) no-repeat center center/cover;  /* / use between position and size sh */
 }
 
  /* FOOTER */
@@ -113,7 +120,7 @@ nav {
 
 .nav-toggle-label {
 
-    font-size: 2rem;  /* make the label larger so its easyer to tap */
+    font-size: 2rem;  /* make the label larger so its easy to tap */
 
 }
 
@@ -136,7 +143,7 @@ nav {
         position: relative; /*to be back inside the header */
         box-shadow: none; /* we no longer need it */
         width: fit-content; /* no longer take all the space within the header */
-        padding-right: 1rem; /* so meniu itesm will not thik to the screen edge */
+        padding-right: 1rem; /* so meniu itesm will not thick to the screen edge */
     }
 
      #menu {
