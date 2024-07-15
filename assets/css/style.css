@@ -141,6 +141,27 @@ hr {
     margin: 5px 0;
 }
 
+ /* CIRCLE COVER PIC */
+#circle-cover-bg {
+
+    background: url(../images/reasons-image.webp) no-repeat top center / cover;
+    height: 90vw;
+    width: 90vw;
+    margin-bottom: 20px;
+
+    /* MAKES IT A CIRCLE if start with square div .148 .149 */
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+
+}
+    /* center the image when phone rotate */
+#benefits-image {  
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
 
 /* Nav bar styles for the DROPDOWN MENU */
 
