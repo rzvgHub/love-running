@@ -247,6 +247,22 @@ nav {
 }
 
 
+    /* MEDIA QUERIES */
+
+    @media screen and (min-width: 576px) {
+    /* set the gallery photos in to columns of 2 */
+        #photos {
+
+            column-count: 2;
+            /* for the space between photos */
+            column-gap: 0;
+        }
+        
+    }
+
+
+
+
 /* MEDIA QUERIES -- Tablets and Larger than 768px should be below so it can override phone styles , It only activates when certain criteria are meet ( scren width being reached) */
 /* any css writen in media queri will  apply only to tablets or screns > width 768px */
 
@@ -310,6 +326,11 @@ nav {
         align-self: flex-end;
     }
 
+    #photos {
+
+        column-count: 3;
+    }
+
 }
 
 
@@ -355,5 +376,11 @@ nav {
     
         #benefits-physical > div {
             align-self: flex-end;
+        }
+
+        #photos {
+
+            column-count: 4;
+            
         }
     }
