@@ -30,6 +30,13 @@ h1, h2, h3 {
     color: #252525;
 }
 
+.hidden-heading {
+
+    display: none;
+}
+
+/* HEADER */
+
 header {                   /*styled for mobile screens */
     background-color: #ffffff;
     padding: 0 1rem;     /*longhand padding-left padding-right to prevent contecnt stick to side of the screen*/
