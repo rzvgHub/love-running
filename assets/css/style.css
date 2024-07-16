@@ -1,29 +1,23 @@
 /* GOOGLE FONTS */
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
 
-/* Asterisk wildcard selector * wich apply to all */
+/* Asterisk wildcard selector * which applies to all */
 * {
- 
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* General styles applyed to the body , this will apply to all body elements if otherwise specified */
-
+/* General styles applied to the body */
 body {
-
-    min-height: 100vh;  /* makes the body viewport height 100% of the viewport */
+    min-height: 100vh; /* makes the body viewport height 100% of the viewport */
     display: flex;
     flex-direction: column;
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
-
 }
 
 h1, h2, h3 {
-
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -31,41 +25,34 @@ h1, h2, h3 {
 }
 
 .hidden-heading {
-
     display: none;
 }
 
 /* HEADER */
-
-header {                   /*styled for mobile screens */
+header { /* styled for mobile screens */
     background-color: #ffffff;
-    padding: 0 1rem;     /*longhand padding-left padding-right to prevent contecnt stick to side of the screen*/
+    padding: 0 1rem; /* prevent content from sticking to side of the screen */
     position: fixed;
-    z-index: 99;      /* to make sure its laierd ontop of other elements that might have a z-index later */
-    width: 100%;       /*  position fixed has affected the width of the element , to corect we use width: 100 */
-    box-shadow: 0 2px 2px #3a3a3a;       /* makes the header show slitly above the other elements */
-    display: flex; /* down code mset the nav-toggle checkbox to the top right */
+    z-index: 99; /* to ensure it layers on top of other elements */
+    width: 100%; /* correct width affected by position fixed */
+    box-shadow: 0 2px 2px #3a3a3a; /* makes the header slightly elevated */
+    display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
 
 header a {
     text-decoration: none; /* remove link underline */
-    color: inherit; 
-    letter-spacing: 2px; /* create space between letters */
     color: #252525;
-
+    letter-spacing: 2px; /* create space between letters */
 }
 
 /* Main content */
 main {
-    /* Enlarge main element to push footer down*/
-    flex: 1 0 auto;
-    /* Add margin at the top to prevent content from being covered by the header */
-    margin-top: 47px;
-    /* Enable flex properties for child elements */
+    flex: 1 0 auto; /* Enlarge main element to push footer down */
+    margin-top: 47px; /* Prevent content from being covered by the header */
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Enable flex properties for child elements */
 }
 
 /* SIGN-UP Form */
@@ -83,11 +70,10 @@ main {
     padding: 30px;
 }
 
-#signup-form>h2 {
+#signup-form > h2 {
     color: #fafafa;
     margin-bottom: 20px;
 }
-
 
 .text-input {
     background: transparent;
@@ -116,19 +102,15 @@ main {
 }
 
 /* HERO */
-
-
 #hero {
-    
     height: 600px;
     width: 100%;
-    background: url(../images/hero-image.webp) no-repeat center center/cover;  /* / use between position and size sh (cover) makes responsive on all screens*/
+    background: url(../images/hero-image.webp) no-repeat center center / cover; /* responsive on all screens */
     position: relative;
 }
 
 #cover-text {
-
-    background-color: rgba(241, 109, 107, .7); /* .7  aplha value opacity */
+    background-color: rgba(241, 109, 107, .7); /* .7 alpha value opacity */
     font-size: 130%;
     position: absolute;
     bottom: 30px;
@@ -139,52 +121,36 @@ main {
 }
 
 #cover-text > h2, #cover-text > h3 {
-
     color: #ffffff;
-
 }
 
-  /* Gallery page styles */
-/*selects the images from the div */
-  #photos img {
+/* Gallery page styles */
+#photos img {
     width: 100%;
     line-height: 1em;
-  }
-
- 
-  #photos {
-
-    line-height: 0;
-  }
-
- /* FOOTER */
- #social-networks {
-
-    text-align: center;
-    padding: 20px 0; /* above and below sh */
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none; /* remove list buletpoints */
-    
-   
- }
-
-  /* SING-UP */
-
-
-
-#menu {
-
-    letter-spacing: 4px;  /* create space between letters */
-    font-size: 110%; /* makes size a little bigger */
-    list-style-type: none; /* removes the bulletpoints from the list */
-    
 }
 
-#menu > li {             /*target the list from the menu , here we create some vertical space between the items of the list.*/
+#photos {
+    line-height: 0;
+}
 
-margin-bottom: 1rem;
+/* FOOTER */
+#social-networks {
+    text-align: center;
+    padding: 20px 0; /* above and below */
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none; /* remove list bullet points */
+}
 
+#menu {
+    letter-spacing: 4px; /* create space between letters */
+    font-size: 110%; /* makes size a little bigger */
+    list-style-type: none; /* removes the bullet points from the list */
+}
+
+#menu > li { /* target the list from the menu, create vertical space between items */
+    margin-bottom: 1rem;
 }
 
 #reasons {
@@ -198,7 +164,7 @@ margin-bottom: 1rem;
     font-size: 280%;
 }
 
-#benefits-physical>div, #benefits-mental>div {
+#benefits-physical > div, #benefits-mental > div {
     line-height: 20px;
     margin-bottom: 20px;
 }
@@ -216,32 +182,27 @@ hr {
     margin: 5px 0;
 }
 
- /* CIRCLE COVER PIC */
+/* CIRCLE COVER PIC */
 #circle-cover-bg {
-
     background: url(../images/reasons-image.webp) no-repeat top center / cover;
     height: 90vw;
     width: 90vw;
     margin-bottom: 20px;
-
-    /* MAKES IT A CIRCLE if start with square div .148 .149 */
-    border-radius: 50%;
+    border-radius: 50%; /* makes it a circle if starting with square div */
     max-width: 300px;
     max-height: 300px;
-
 }
-    /* center the image when phone rotate */
-#benefits-image {  
-display: flex;
-align-items: center;
-justify-content: center;
 
+/* center the image when phone rotates */
+#benefits-image {  
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Meetup Times section */
 #times {
-    background: url('../images/dublin-city.webp') no-repeat center/cover;
-    /* Handles responsivity without the need for a media query */
+    background: url('../images/dublin-city.webp') no-repeat center / cover;
     display: flex;
     flex-wrap: wrap;
 }
@@ -251,117 +212,92 @@ justify-content: center;
     background-color: rgba(0, 0, 0, .6);
     padding: 15px;
     text-align: center;
-    /* This will not wrap on screens of less than 400px wide.
-    Each div will expand to fill the available space on its row */
     flex-basis: 200px;
-    flex-grow: 1;
-    /* Creates a grid of meetup time divs over the background image */
+    flex-grow: 1; /* Creates a grid of meetup time divs over the background image */
     border: 2px solid white;
 }
 
 #times h3 {
-    /* Override the heading colour set in general styles */
-    color: #fafafa;
+    color: #fafafa; /* Override the heading color set in general styles */
 }
 
 /* Nav bar styles for the DROPDOWN MENU */
-
 nav {
-    position: absolute; /* takes an element outside of the normal flow of the page structure , being position to the nearest ancester */
+    position: absolute; /* takes an element outside the normal flow of the page structure */
     background-color: #ffffff;
     width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a;       /* makes the header show slitly above the other elements */
+    box-shadow: 0 2px 2px #3a3a3a; /* makes the header slightly elevated */
     left: 0; /* stick it to the left of the page */
-    padding: 0 1rem; /* make nav items line-up nice below the header */
-    display: none; /* the nav bar stay hiden until the user click on it */
-    top: 100%; /* Keep the header above the nav elements , this tell the nav elements that have to start from the bottom if its parent */
+    padding: 0 1rem; /* make nav items line up nicely below the header */
+    display: none; /* the nav bar stays hidden until the user clicks on it */
+    top: 100%; /* Keep the header above the nav elements */
 }
 
 /* MAKE NAV-BAR TOGGLE WHEN IT IS CHECKED */
-
-#nav-toggle:checked~nav {
-
+#nav-toggle:checked ~ nav {
     display: block;
 }
 
 #nav-toggle {
-    display: none; /* make checkbox disapear from the drop down button */
+    display: none; /* make checkbox disappear from the drop-down button */
 }
 
 .nav-toggle-label {
-
-    font-size: 2rem;  /* make the label larger so its easy to tap */
-
+    font-size: 2rem; /* make the label larger so it's easy to tap */
 }
 
 #social-networks i {
-
-    font-size: 160%; /*makes icons larger */
-    padding: 5%; /*for some space */
+    font-size: 160%; /* makes icons larger */
+    padding: 5%; /* for some space */
     color: #3a3a3a;
 }
 
-
-    /* MEDIA QUERIES */
-
-    @media screen and (min-width: 576px) {
-    /* set the gallery photos in to columns of 2 */
-        #photos {
-
-            column-count: 2;
-            /* for the space between photos */
-            column-gap: 0;
-        }
-        
+/* MEDIA QUERIES */
+@media screen and (min-width: 576px) {
+    /* set the gallery photos into columns of 2 */
+    #photos {
+        column-count: 2;
+        /* for the space between photos */
+        column-gap: 0;
     }
+}
 
-
-
-
-/* MEDIA QUERIES -- Tablets and Larger than 768px should be below so it can override phone styles , It only activates when certain criteria are meet ( scren width being reached) */
-/* any css writen in media queri will  apply only to tablets or screns > width 768px */
-
-@media screen and (min-width: 768px) {  
-
-    /*header*/
+/* MEDIA QUERIES -- Tablets and larger than 768px */
+@media screen and (min-width: 768px) {
+    /* header */
     nav {
-        display: block;  /* makes sure nav bar is always displayed */
-        position: relative; /*to be back inside the header */
+        display: block; /* make sure nav bar is always displayed */
+        position: relative; /* to be back inside the header */
         box-shadow: none; /* we no longer need it */
         width: fit-content; /* no longer take all the space within the header */
-        padding-right: 1rem; /* so meniu itesm will not thick to the screen edge */
+        padding-right: 1rem; /* so menu items will not stick to the screen edge */
     }
 
-     #menu {
+    #menu {
+        display: flex; /* makes menu show in a row */
+    }
 
-        display: flex; /*makes menu show in a row*/
-        
-   }
-     #menu > li {
-
+    #menu > li {
         padding-left: 1rem;
-     }
-    .nav-toggle-label {
+    }
 
+    .nav-toggle-label {
         display: none; /* disable the toggle checkbox */
     }
 
     /* Adjust the Love Running logo */
-
     #logo {
         font-size: 280%;
         line-height: 75px;
-        margin: 0 0.5rem; /*left and right*/
+        margin: 0 0.5rem; /* left and right */
     }
 
     /* Main Content */
     main {
-        /* push main content down to acomodate the larger header */
-        margin-top: 75px;
+        margin-top: 75px; /* push main content down to accommodate the larger header */
     }
 
     /* Reason Section */
-
     #benefits-physical,
     #benefits-mental {
         display: flex;
@@ -371,23 +307,20 @@ nav {
 
     #benefits-physical > div,
     #benefits-mental > div {
-
         width: 75%;
     }
 
     #benefits-mental > div {
-
         text-align: end;
         align-self: flex-end;
     }
 
     #photos {
-
         column-count: 3;
     }
 
-     /* Form */
-     #signup {
+    /* Form */
+    #signup {
         background-position: center;
         position: relative;
     }
@@ -409,56 +342,40 @@ nav {
     }
 }
 
-}
-
-
-
-
-
-    /* tablets or larger */
-
-
 @media screen and (min-width: 992px) {
-
     #menu a:hover {
-
         border-bottom: 1px solid #3a3a3a; /* underline the current position in the menu */
-
     }
 }
 
-     /* Desktop */
-
-     @media screen and (min-width: 1200px) {    
-        /* Reasons section */
-        #benefits {
-            display: flex;
-            flex-direction: row;
-        }
-    
-        #benefits > div {
-            flex: 1;
-        }
-    
-        #benefits-image {
-            order: 0
-        }
-    
-        #benefits-mental {
-            order: 1;
-        }
-    
-        #benefits-mental > div {
-            align-self: flex-start;
-        }
-    
-        #benefits-physical > div {
-            align-self: flex-end;
-        }
-
-        #photos {
-
-            column-count: 4;
-            
-        }
+@media screen and (min-width: 1200px) {
+    /* Reasons section */
+    #benefits {
+        display: flex;
+        flex-direction: row;
     }
+
+    #benefits > div {
+        flex: 1;
+    }
+
+    #benefits-image {
+        order: 0;
+    }
+
+    #benefits-mental {
+        order: 1;
+    }
+
+    #benefits-mental > div {
+        align-self: flex-start;
+    }
+
+    #benefits-physical > div {
+        align-self: flex-end;
+    }
+
+    #photos {
+        column-count: 4;
+    }
+}
