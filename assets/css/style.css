@@ -62,7 +62,25 @@ main {
     background-position: 75%;
     padding: 20px 10% 0 10%;
     flex-grow: 1;
+
+    /* Animates zoom effect on loading the page */
+    animation-name: signup;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
+
+/* Creates the level of zoom for hero image */
+@keyframes signup {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+
+
 
 #signup-form {
     color: #ffffff;
@@ -101,13 +119,30 @@ main {
     color: #fafafa;
 }
 
-/* HERO */
+/* HERO photo */
 #hero {
     height: 600px;
     width: 100%;
     background: url(../images/hero-image.webp) no-repeat center center / cover; /* responsive on all screens */
     position: relative;
+
+/* Animates zoom effect on loading the page */
+
+    animation-name: hero;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
+
+/* Creates the level of zoom for hero image */
+@keyframes hero {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
 
 #cover-text {
     background-color: rgba(241, 109, 107, .7); /* .7 alpha value opacity */
@@ -323,6 +358,12 @@ nav {
     #signup {
         background-position: center;
         position: relative;
+
+
+
+
+
+
     }
 
     #signup-form {
