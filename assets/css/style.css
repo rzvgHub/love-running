@@ -72,10 +72,10 @@ main {
 /* Creates the level of zoom for hero image */
 @keyframes signup {
     from{
-        transform: scale(1);
+        transform: scale(1.1);
     }
     to{
-        transform: scale(1.1);
+        transform: scale(1.0);
     }
 }
 
@@ -120,6 +120,7 @@ main {
 }
 
 /* HERO photo */
+
 #hero {
     height: 600px;
     width: 100%;
@@ -136,12 +137,13 @@ main {
 /* Creates the level of zoom for hero image */
 @keyframes hero {
     from {
-        transform: scale(1);
-    }
-    to {
         transform: scale(1.1);
     }
+    to {
+        transform: scale(1.0);
+    }
 }
+
 
 
 #cover-text {
