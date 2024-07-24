@@ -262,7 +262,17 @@ hr {
     flex-basis: 200px;
     flex-grow: 1; /* Creates a grid of meetup time divs over the background image */
     border: 2px solid white;
+
+    /* hoover */
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
+
+#times div:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darken background on hover */
+    border-color: #080707; /* Change border color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add box shadow on hover */
+}
+
 
 #times h3 {
     color: #fafafa; /* Override the heading color set in general styles */
